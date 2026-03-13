@@ -1,30 +1,34 @@
-function toggleMenu() {
-  const navLinks = document.querySelector(".nav-links");
-  navLinks.classList.toggle("show");
+function toggleMenu(){
+const nav=document.querySelector(".nav-links");
+nav.classList.toggle("show");
 }
 
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+let currentSlide=0;
 
-function showSlide(index) {
-  if (slides.length === 0) return;
+const slides=document.querySelectorAll(".slide");
 
-  if (index >= slides.length) {
-    currentSlide = 0;
-  } else if (index < 0) {
-    currentSlide = slides.length - 1;
-  } else {
-    currentSlide = index;
-  }
+function showSlide(index){
 
-  slides.forEach((slide) => slide.classList.remove("active"));
-  slides[currentSlide].classList.add("active");
+if(index>=slides.length){
+currentSlide=0;
 }
 
-function moveSlide(step) {
-  showSlide(currentSlide + step);
+else if(index<0){
+currentSlide=slides.length-1;
 }
 
-if (slides.length > 0) {
-  showSlide(currentSlide);
+else{
+currentSlide=index;
+}
+
+slides.forEach(slide=>slide.classList.remove("active"));
+
+slides[currentSlide].classList.add("active");
+
+}
+
+function moveSlide(step){
+
+showSlide(currentSlide+step);
+
 }

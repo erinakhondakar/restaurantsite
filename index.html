@@ -1,69 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Golden Spoon Restaurant</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Iffat's Rannaghor</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-  <header>
-    <div class="logo">Golden Spoon</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-    </nav>
-  </header>
+<header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Welcome to Golden Spoon</h1>
-      <p>Fresh flavors, warm atmosphere, unforgettable dining.</p>
-      <a href="menu.html" class="btn">View Menu</a>
-    </div>
-  </section>
+<div class="logo">
+Iffat's Rannaghor
+</div>
 
-  </section>  <!-- hero ends -->
+<nav>
 
-  <div class="divider">
-    <span>✽</span>
-  </div>
+<ul class="nav-links">
+
+<li><a href="index.html" class="active">Home</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="hamburger" onclick="toggleMenu()">
+☰
+</div>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Welcome to Iffat's Rannaghor</h1>
+
+<p>
+Warm Bengali hospitality, comforting flavors, and homestyle cooking
+made with love.
+</p>
+
+<a href="menu.html" class="btn">Explore Menu</a>
+
+</div>
+
+</section>
+
+
+<div class="divider">
+<span>❦</span>
+</div>
+
 
 <section class="gallery-section">
 
-  <section class="gallery-section">
-    <h2>Our Food Gallery</h2>
-    <div class="slider">
-      <button class="prev" onclick="moveSlide(-1)">❮</button>
-      <div class="slides">
-        <img src="images/food1.jpg" class="slide active" alt="Food 1">
-        <img src="images/food2.jpg" class="slide" alt="Food 2">
-        <img src="images/food3.jpg" class="slide" alt="Food 3">
-        <img src="images/food4.jpg" class="slide" alt="Food 4">
-        <img src="images/food5.jpg" class="slide" alt="Food 5">
-        <img src="images/food6.jpg" class="slide" alt="Food 6">
-      </div>
-      <button class="next" onclick="moveSlide(1)">❯</button>
-    </div>
-  </section>
+<h2>A Taste of Bengal</h2>
 
-  <footer>
-    <div>
-      <p><strong>Business Hours:</strong> Mon-Sun: 11:00 AM - 10:00 PM</p>
-    </div>
-    <div class="socials">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">TikTok</a>
-    </div>
-  </footer>
+<div class="slider">
 
-  <script src="script.js"></script>
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+
+<div class="slides">
+
+<img src="images/food1.jpg" class="slide active">
+<img src="images/food2.jpg" class="slide">
+<img src="images/food3.jpg" class="slide">
+<img src="images/food4.jpg" class="slide">
+<img src="images/food5.jpg" class="slide">
+<img src="images/food6.jpg" class="slide">
+
+</div>
+
+<button class="next" onclick="moveSlide(1)">❯</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+Business Hours: Mon–Thu 11am–9pm | Fri–Sun 11am–10:30pm
+</p>
+
+<div class="socials">
+
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">TikTok</a>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
