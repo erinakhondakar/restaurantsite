@@ -2,13 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", serif;
 }
 
 body {
   background-color: #f8f3eb;
   color: #2f1e1e;
   line-height: 1.6;
+  font-family: "Manrope", sans-serif;
+}
+
+/* soft decorative background feel */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(212, 164, 55, 0.06) 0, rgba(212, 164, 55, 0.06) 2px, transparent 2px),
+    radial-gradient(circle at 80% 30%, rgba(107, 30, 30, 0.05) 0, rgba(107, 30, 30, 0.05) 2px, transparent 2px),
+    radial-gradient(circle at 40% 80%, rgba(212, 164, 55, 0.05) 0, rgba(212, 164, 55, 0.05) 2px, transparent 2px);
+  background-size: 120px 120px;
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* HEADER */
@@ -22,11 +36,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid #d8a24c;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 700;
   color: #f7d27a;
   letter-spacing: 0.5px;
 }
@@ -77,27 +93,32 @@ nav {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(47, 20, 20, 0.5);
+  background: rgba(47, 20, 20, 0.55);
 }
 
 .hero-text {
   position: relative;
   z-index: 1;
-  max-width: 750px;
+  max-width: 760px;
   color: #fffaf3;
   background: rgba(107, 30, 30, 0.35);
-  padding: 35px 25px;
-  border-radius: 14px;
+  padding: 40px 28px;
+  border-radius: 18px;
+  border: 1px solid rgba(247, 210, 122, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(2px);
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.4rem;
   margin-bottom: 15px;
   color: #f7d27a;
+  line-height: 1.1;
 }
 
 .hero-text p {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   margin-bottom: 22px;
 }
 
@@ -107,8 +128,8 @@ nav {
   color: #3b2323;
   text-decoration: none;
   padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
+  border-radius: 999px;
+  font-weight: 600;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -117,23 +138,44 @@ nav {
   transform: translateY(-2px);
 }
 
+/* SECTION TITLES */
+.gallery-section h2,
+.page-banner h1,
+.about-section h2,
+.contact-form h2,
+.map-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.3px;
+}
+
 /* GALLERY */
 .gallery-section {
-  padding: 60px 20px;
+  padding: 70px 20px;
   text-align: center;
-  background-color: #fffaf3;
+  background:
+    linear-gradient(to bottom, rgba(255, 250, 243, 0.95), rgba(255, 250, 243, 0.95));
 }
 
 .gallery-section h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #6b1e1e;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.gallery-section h2::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 3px;
+  background-color: #d8a24c;
+  margin: 10px auto 0;
+  border-radius: 20px;
 }
 
 .slider {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 850px;
+  margin: 30px auto 0;
   overflow: hidden;
 }
 
@@ -144,10 +186,11 @@ nav {
 .slide {
   display: none;
   width: 100%;
-  height: 480px;
+  height: 500px;
   object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border: 4px solid rgba(255, 248, 239, 0.9);
 }
 
 .slide.active {
@@ -159,11 +202,11 @@ nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(107, 30, 30, 0.8);
+  background-color: rgba(107, 30, 30, 0.82);
   color: white;
   border: none;
-  font-size: 1.5rem;
-  padding: 10px 14px;
+  font-size: 1.4rem;
+  padding: 11px 15px;
   cursor: pointer;
   border-radius: 50%;
   transition: background-color 0.3s ease;
@@ -176,24 +219,25 @@ nav {
 }
 
 .prev {
-  left: 12px;
+  left: 14px;
 }
 
 .next {
-  right: 12px;
+  right: 14px;
 }
 
 /* PAGE BANNER */
 .page-banner {
-  background: linear-gradient(rgba(107, 30, 30, 0.85), rgba(107, 30, 30, 0.85)),
+  background:
+    linear-gradient(rgba(107, 30, 30, 0.86), rgba(107, 30, 30, 0.86)),
     url("images/hero.jpg") center/cover no-repeat;
   color: #fffaf3;
   text-align: center;
-  padding: 70px 20px;
+  padding: 80px 20px;
 }
 
 .page-banner h1 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   color: #f7d27a;
 }
 
@@ -202,30 +246,30 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  padding: 50px 30px;
+  padding: 55px 30px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #f8f3eb;
 }
 
 .menu-card {
-  background-color: #fffaf3;
-  border-radius: 14px;
-  padding: 22px;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #fffaf3, #fff6ea);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
   border: 1px solid #ecd9b8;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
 .menu-card h3 {
+  font-family: "Cormorant Garamond", serif;
   color: #6b1e1e;
   margin-bottom: 10px;
-  font-size: 1.35rem;
+  font-size: 1.8rem;
 }
 
 .menu-card p {
@@ -236,20 +280,32 @@ nav {
 .menu-card span {
   color: #c07d22;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 /* ABOUT PAGE */
 .about-section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 60px 30px;
+  padding: 70px 30px;
+  background: rgba(255, 250, 243, 0.7);
+  border-radius: 18px;
 }
 
 .about-section h2 {
   color: #6b1e1e;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+.about-section h2::after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 3px;
+  background-color: #d8a24c;
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 .about-section p {
@@ -269,16 +325,18 @@ nav {
 
 .contact-form,
 .map-section {
-  background-color: #fffaf3;
-  padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 250, 243, 0.95);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ecd9b8;
 }
 
 .contact-form h2,
 .map-section h2 {
   color: #6b1e1e;
   margin-bottom: 18px;
+  font-size: 2.1rem;
 }
 
 .contact-form form {
@@ -291,9 +349,10 @@ nav {
 .contact-form textarea {
   padding: 12px;
   border: 1px solid #d8c3a5;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1rem;
   background-color: #fffdf9;
+  font-family: "Manrope", sans-serif;
 }
 
 .contact-form input:focus,
@@ -307,8 +366,9 @@ footer {
   background-color: #6b1e1e;
   color: #fff8ef;
   text-align: center;
-  padding: 22px 20px;
+  padding: 24px 20px;
   margin-top: 40px;
+  border-top: 2px solid #d8a24c;
 }
 
 .socials {
@@ -342,6 +402,10 @@ footer {
     padding: 16px 20px;
   }
 
+  .logo {
+    font-size: 1.7rem;
+  }
+
   .hamburger {
     display: block;
   }
@@ -356,7 +420,7 @@ footer {
     background-color: #6b1e1e;
     width: 190px;
     padding: 18px;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
   }
 
@@ -373,7 +437,7 @@ footer {
   }
 
   .hero-text h1 {
-    font-size: 2.1rem;
+    font-size: 2.4rem;
   }
 
   .hero-text p {
@@ -383,11 +447,11 @@ footer {
   .gallery-section h2,
   .page-banner h1,
   .about-section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .slide {
-    height: 280px;
+    height: 290px;
   }
 
   .menu-container {
