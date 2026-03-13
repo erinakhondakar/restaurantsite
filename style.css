@@ -463,4 +463,30 @@ footer {
   .contact-container {
     padding: 40px 20px;
   }
+  
+  /* PAISLEY / ORNAMENTAL DIVIDER */
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+  color: #d8a24c;
+  font-size: 28px;
+  letter-spacing: 10px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d8a24c, transparent);
+  margin: 0 20px;
+}
+
+/* decorative symbol */
+.divider span {
+  font-family: "Cormorant Garamond", serif;
+}
 }
