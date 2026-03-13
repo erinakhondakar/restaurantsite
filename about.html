@@ -3,50 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Golden Spoon</title>
+  <title>Iffat's Rannaghor | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <div class="logo">Golden Spoon</div>
+    <div class="logo">Iffat's Rannaghor</div>
+
     <nav>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
     </nav>
   </header>
 
-  <section class="page-banner">
-    <h1>About Us</h1>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Iffat's Rannaghor</h1>
+      <p>
+        Enjoy the warmth of homestyle Bengali cooking with rich spices,
+        comforting flavors, and meals made to bring people together.
+      </p>
+      <a href="menu.html" class="btn">Explore Our Menu</a>
+    </div>
   </section>
 
-  <section class="about-section">
-    <h2>Our Story</h2>
-    <p>
-      Golden Spoon was founded with one simple goal: to bring people together through fresh,
-      flavorful food and a welcoming atmosphere. What started as a small family dream grew
-      into a neighborhood restaurant known for its comforting dishes, friendly service, and
-      warm dining experience. We believe every meal should feel special, whether you are
-      joining us for a quick lunch or a celebration with loved ones.
-    </p>
+  <section class="gallery-section">
+    <h2>A Taste of Bengal</h2>
+    <div class="slider">
+      <button class="prev" onclick="moveSlide(-1)">❮</button>
 
-    <p>
-      Our chefs focus on quality ingredients, bold flavors, and dishes that blend tradition
-      with creativity. From signature entrees to house-made desserts, every item on our menu
-      is prepared with care. At Golden Spoon, food is more than just a meal — it is an
-      experience meant to be shared.
-    </p>
+      <div class="slides">
+        <img src="images/food1.jpg" class="slide active" alt="Bengali dish 1" />
+        <img src="images/food2.jpg" class="slide" alt="Bengali dish 2" />
+        <img src="images/food3.jpg" class="slide" alt="Bengali dish 3" />
+        <img src="images/food4.jpg" class="slide" alt="Bengali dish 4" />
+        <img src="images/food5.jpg" class="slide" alt="Bengali dish 5" />
+        <img src="images/food6.jpg" class="slide" alt="Bengali dish 6" />
+      </div>
+
+      <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
   </section>
 
   <footer>
     <div>
-      <p><strong>Business Hours:</strong> Mon-Sun: 11:00 AM - 10:00 PM</p>
+      <p><strong>Business Hours:</strong> Mon-Thu: 11:00 AM - 9:00 PM | Fri-Sun: 11:00 AM - 10:30 PM</p>
     </div>
+
     <div class="socials">
       <a href="#">Facebook</a>
       <a href="#">Instagram</a>
