@@ -63,7 +63,7 @@ nav {
 
 /* HERO SECTION */
 .hero {
-  background: url("images/hero.jpg") center/cover no-repeat;
+  background: url("home2.jpg") center/cover no-repeat;
   min-height: 85vh;
   display: flex;
   justify-content: center;
@@ -186,7 +186,7 @@ nav {
 /* PAGE BANNER */
 .page-banner {
   background: linear-gradient(rgba(107, 30, 30, 0.85), rgba(107, 30, 30, 0.85)),
-    url("images/hero.jpg") center/cover no-repeat;
+    url("home.jpg") center/cover no-repeat;
   color: #fffaf3;
   text-align: center;
   padding: 70px 20px;
@@ -215,11 +215,6 @@ nav {
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
   border: 1px solid #ecd9b8;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
 .menu-card h3 {
