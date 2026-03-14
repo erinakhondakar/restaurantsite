@@ -54,16 +54,9 @@ nav {
   color: #f7d27a;
 }
 
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #fff8ef;
-}
-
 /* HERO SECTION */
 .hero {
-  background: url("home2.jpg") center/cover no-repeat;
+  background: url("images/home2.jpg") center/cover no-repeat;
   min-height: 85vh;
   display: flex;
   justify-content: center;
@@ -186,7 +179,7 @@ nav {
 /* PAGE BANNER */
 .page-banner {
   background: linear-gradient(rgba(107, 30, 30, 0.85), rgba(107, 30, 30, 0.85)),
-    url("home.jpg") center/cover no-repeat;
+    url("images/home.jpg") center/cover no-repeat;
   color: #fffaf3;
   text-align: center;
   padding: 70px 20px;
@@ -337,9 +330,6 @@ footer {
     padding: 16px 20px;
   }
 
-  .hamburger {
-    display: block;
-  }
 
   .nav-links {
     display: none;
