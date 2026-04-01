@@ -54,6 +54,14 @@ nav {
   color: #f7d27a;
 }
 
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #f7d27a;
+}
+
 /* HERO SECTION */
 .hero {
   background: url("images/home2.jpg") center/cover no-repeat;
@@ -329,7 +337,10 @@ footer {
   header {
     padding: 16px 20px;
   }
-
+  
+  .hamburger {
+    display: block;
+  }
 
   .nav-links {
     display: none;
