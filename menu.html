@@ -30,61 +30,64 @@
     <h1>Our Menu</h1>
   </section>
 
-  <section class="menu-container">
-    <div class="menu-card">
-      <h3>Kacchi Biryani</h3>
-      <p>Fragrant basmati rice layered with marinated lamb, caramelized onions, and aromatic spices, slow cooked to perfection.</p>
-      <span>$17.99</span>
-      <button class="btn add-cart-btn" onclick="addToCart('Kacchi Biryani', 17.99)">Add to Cart</button>
-    </div>
+  <div class="menu-cart-wrapper">
+    <section class="menu-container">
+      <div class="menu-card">
+        <h3>Kacchi Biryani</h3>
+        <p>Fragrant basmati rice layered with marinated lamb, caramelized onions, and aromatic spices, slow cooked to perfection.</p>
+        <span>$17.99</span>
+        <button class="btn add-cart-btn" onclick="addToCart('Kacchi Biryani', 17.99)">Add to Cart</button>
+      </div>
+      
+      <div class="menu-card">
+        <h3>Ilish Bhapa</h3>
+        <p>Steamed hilsa fish in a rich mustard and green chili sauce, a classic Bengali delicacy.</p>
+        <span>$18.99</span>
+        <button class="btn add-cart-btn" onclick="addToCart('Ilish Bhapa', 18.99)">Add to Cart</button>
+      </div>
 
-    <div class="menu-card">
-      <h3>Ilish Bhapa</h3>
-      <p>Steamed hilsa fish in a rich mustard and green chili sauce, a classic Bengali delicacy.</p>
-      <span>$18.99</span>
-      <button class="btn add-cart-btn" onclick="addToCart('Ilish Bhapa', 18.99)">Add to Cart</button>
-    </div>
+      <div class="menu-card">
+        <h3>Chingri Malai Curry</h3>
+        <p>Large prawns simmered in a creamy coconut curry with subtle spices and warmth.</p>
+        <span>$19.99</span>
+        <button class="btn add-cart-btn" onclick="addToCart('Chingri Malai Curry', 19.99)">Add to Cart</button>
+      </div>
 
-    <div class="menu-card">
-      <h3>Chingri Malai Curry</h3>
-      <p>Large prawns simmered in a creamy coconut curry with subtle spices and warmth.</p>
-      <span>$19.99</span>
-      <button class="btn add-cart-btn" onclick="addToCart('Chingri Malai Curry', 19.99)">Add to Cart</button>
-    </div>
+      <div class="menu-card">
+        <h3>Beef Bhuna</h3>
+        <p>Slow-cooked beef in a thick, spiced gravy with caramelized onions and aromatic herbs.</p>
+        <span>$17.99</span>
+        <button class="btn add-cart-btn" onclick="addToCart('Beef Bhuna', 17.99)">Add to Cart</button>
+      </div>
 
-    <div class="menu-card">
-      <h3>Beef Bhuna</h3>
-      <p>Slow-cooked beef in a thick, spiced gravy with caramelized onions and aromatic herbs.</p>
-      <span>$17.99</span>
-      <button class="btn add-cart-btn" onclick="addToCart('Beef Bhuna', 17.99)">Add to Cart</button>
-    </div>
+      <div class="menu-card">
+        <h3>Shorshe Chicken</h3>
+        <p>Tender chicken cooked in a bold mustard sauce with green chilies and traditional spices.</p>
+        <span>$16.99</span>
+        <button class="btn add-cart-btn" onclick="addToCart('Shorshe Chicken', 16.99)">Add to Cart</button>
+      </div>
 
-    <div class="menu-card">
-      <h3>Shorshe Chicken</h3>
-      <p>Tender chicken cooked in a bold mustard sauce with green chilies and traditional spices.</p>
-      <span>$16.99</span>
-      <button class="btn add-cart-btn" onclick="addToCart('Shorshe Chicken', 16.99)">Add to Cart</button>
-    </div>
-
-    <div class="menu-card">
-      <h3>Begun Bhaja</h3>
-      <p>Thick slices of eggplant marinated with turmeric and salt, pan-fried until golden and crispy.</p>
-      <span>$8.99</span>
-      <button class="btn add-cart-btn" onclick="addToCart('Begun Bhaja', 8.99)">Add to Cart</button>
-    </div>
-  </section>
-
-  <section class="cart-section">
-    <h2>Your Cart</h2>
-    <div id="cart-items">
-      <p class="empty-cart">Your cart is empty.</p>
-    </div>
-
-    <div class="cart-summary">
-      <h3>Total: $<span id="cart-total">0.00</span></h3>
-      <button class="btn clear-cart-btn" onclick="clearCart()">Clear Cart</button>
-    </div>
-  </section>
+      <div class="menu-card">
+        <h3>Begun Bhaja</h3>
+        <p>Thick slices of eggplant marinated with turmeric and salt, pan-fried until golden and crispy.</p>
+        <span>$8.99</span>
+        <button class="btn add-cart-btn" onclick="addToCart('Begun Bhaja', 8.99)">Add to Cart</button>
+      </div>
+    </section>
+    
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+      
+      <div id="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+      
+      <div class="cart-summary">
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <button class="btn clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </section>
+  </div>
 
   <footer>
     <div>
